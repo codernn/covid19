@@ -1,9 +1,7 @@
 <div class="jumbostron bg.white text-center">
     <h1 class="display-4">COVID-19 Tracker</h1>
     <hr>
-    <p class="lead">On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.
-        People with mild symptoms who are otherwise healthy should self-isolate. Seek medical attention if you have a fever, a cough, and difficulty breathing. Call ahead.</p>
-    <hr class="my-4">
-    <p>On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.
-        People with mild symptoms who are otherwise healthy should self-isolate. Seek medical attention if you have a fever, a cough, and difficulty breathing. Call ahead.</p>
+        <app-dashboard-card [totalConfirmed]='totalConfirmed'
+        [totalDeaths]='totalDeaths' [totalActive]='totalActive' [totalRecovered]='totalRecovered'
+        ></app-dashboard-card>
 </div>
