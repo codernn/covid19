@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataServiceService } from 'src/app/services/data-service.service';
 import { GlobalDataSummary } from 'src/app/models/global-data';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 @Component({
   selector: 'app-countries',
