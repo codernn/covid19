@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataServiceService } from 'src/app/services/data-service.service';
 import { GlobalDataSummary } from 'src/app/models/global-data';
-import { GoogleChartComponent, GoogleChartsModule } from 'angular-google-charts';
-import { GoogleChartsConfig } from 'angular-google-charts/lib/models/google-charts-config.model';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +18,12 @@ export class HomeComponent implements OnInit {
   datatable = [];
   pie = 'PieChart'
   column = 'ColumnChart'
-
+  options = {
+    animation :{
+      duration :1000,
+      easing: 'out',
+    }
+  };
   constructor(private dataService : DataServiceService) { }
   
 
